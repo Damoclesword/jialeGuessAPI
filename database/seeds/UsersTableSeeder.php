@@ -13,9 +13,9 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         $user = new User;
-        $user->name = "xuanxiao";
-        $user->password = \Illuminate\Support\Facades\Hash::make('admin');
-        $user->email = "admin@admin.com";
+        $user->name = "jialemilk";
+        $user->password = \Illuminate\Support\Facades\Hash::make('jialeguess');
+        $user->email = "jiale@admin.com";
         $user->remember_token = str_random(10);
         $user->save();
     }
