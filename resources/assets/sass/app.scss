@@ -1,0 +1,26 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+.app {
+  overflow-x: hidden;
+}
+
+.teams-table-header {
+  th {
+    text-align: center;
+  }
+}
+
+.teams-table-body {
+  td {
+    text-align: center;
+    vertical-align: middle;
+  }
+}
