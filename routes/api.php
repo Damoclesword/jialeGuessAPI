@@ -19,7 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 $api = app(Dingo\Api\Routing\Router::class);
-$api->version('v1', function ($api) {
+$api->version('v1', ['middleware' => ['cors']],function ($api) {
     $api->group(['namespace' => 'App\Api\Controllers', 'middleware' => 'jwt.auth'], function ($api) {
         //clients api
         $api->get('clients/all', 'ClientsController@index');
